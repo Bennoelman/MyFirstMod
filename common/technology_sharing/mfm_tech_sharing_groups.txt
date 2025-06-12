@@ -1,0 +1,13 @@
+
+	technology_sharing_group = {
+
+	id = power_armor_tech_group
+	name = power_armor_tech_group_name
+	desc = power_armor_tech_group_desc
+	picture = GFX_archetype_power_armor_medium
+
+	research_sharing_per_country_bonus = 0.5
+	is_faction_sharing = yes
+	
+	categories = { cat_power_armor	}
+}

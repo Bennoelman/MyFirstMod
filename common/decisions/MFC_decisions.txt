@@ -1,0 +1,106 @@
+MFC_my_first_decisions_cat = {
+	MFC_add_stability = {
+		icon = generic_industry
+		available = {
+			has_stability < 1
+		}
+		visible = {
+			always = yes
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = 0.1
+		}
+	
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+				has_political_power > 155
+			}
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+
+	MFC_build_up_war_support = {
+		icon = generic_industry
+		available = {
+			has_war_support < 1
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 50
+		days_remove = 22
+		days_re_enable = 365
+
+		modifier = {
+			war_support_weekly = 0.05
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.6
+				has_political_power > 155
+			}
+			modifier = {
+				factor = 2
+				has_political_power < 300
+			}
+		}
+	}
+
+	MFC_hold_the_coronation = {
+		icon = GFX_decision_generic_monarchy
+		available = {
+			can_crown_democratic_king = yes
+		}
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+
+		custom_cost_text = has_1_convoy_10_political_power
+
+		custom_cost_trigger = {
+			has_political_power > 9
+			has_equipment = {
+				convoy > 0
+			}
+		}
+
+
+		complete_effect = {
+			country_event = {
+			id = mod_event.3
+			}
+			hidden_effect = {
+				remove_1_convoy_10_political_power = yes
+			}
+			set_cosmetic_tag = MFC_monarchy
+			add_country_leader_role = {
+				character = MFC_modding_king
+				country_leader = {
+					ideology = liberalism
+					traits = { conservative_grandee }
+					expire = 1938.1.1.1
+				}
+				 promote_leader = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

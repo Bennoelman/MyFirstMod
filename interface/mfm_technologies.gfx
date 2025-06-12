@@ -1,0 +1,14 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_simple_exosuits_medium"
+		texturefile = "gfx/interface/technologies/simple_exosuits.tga"
+	}
+	spriteType = {
+		name = "GFX_early_power_armor_medium"
+		texturefile = "gfx/interface/technologies/power_armor_0.tga"
+	}
+	spriteType = {
+		name = "GFX_archetype_power_armor_medium"
+		texturefile = "gfx/interface/archetypes/archetype_power_armor.tga"
+	}
+}

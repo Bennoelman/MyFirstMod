@@ -1,0 +1,6 @@
+﻿l_english:
+  the_king_has_returned:"The King has returned."
+  has_1_convoy_10_political_power:"£GFX_convoy_texticon §Y1§ £GFX_pol_power §Y10§"
+  has_1_convoy_10_political_power_blocked:"£GFX_convoy_texticon §R1§ £GFX_pol_power §R10§"
+  power_armor_tech_group_name:"Power Armor Tech Group"
+  power_armor_tech_group_desc:"This group serves the purpous of sharing PA tech with allies"

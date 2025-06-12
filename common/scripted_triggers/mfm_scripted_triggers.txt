@@ -1,0 +1,4 @@
+can_crown_democratic_king = {
+    has_country_flag = the_king_has_returned
+    has_government = democratic
+}

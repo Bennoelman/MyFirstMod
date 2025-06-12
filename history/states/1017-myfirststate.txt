@@ -1,0 +1,26 @@
+state={
+	id=1017
+	name="STATE_1017"
+	provinces={
+		3422 3463 6351 9484 
+	}
+	manpower=1140000
+	state_category = town
+	history = {
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			3422 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			3422 5
+		}
+		owner = MFC
+		add_core_of = MFC
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

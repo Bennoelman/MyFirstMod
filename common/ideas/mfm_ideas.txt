@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		my_first_idea = {
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				political_power_gain = 0.3
+			}
+		}
+
+		MFS_power_armor_production_lines = {
+			picture = GFX_goal_generic_construct_mil_factory
+
+			equipment_bonus = {
+				power_armor_0 = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+		}
+	}
+}

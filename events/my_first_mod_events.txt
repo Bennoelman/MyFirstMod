@@ -1,0 +1,102 @@
+add_namespace = mod_event
+
+country_event = {
+	id = mod_event.1
+	title = mod_event.1.t
+	desc = mod_event.1.d
+	picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		is_ai = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = mod_event.1.a
+		if = {
+			limit = {
+				has_war = yes
+			}
+			every_other_country = {
+				limit = {
+					has_war_with = ROOT
+				}
+				add_ideas = my_first_idea
+			}
+		}
+		else = {
+			add_ideas = my_first_idea
+		}
+	}
+}
+country_event = {
+	id = mod_event.2
+	title = mod_event.2.t
+	desc = mod_event.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_event.2.a
+		add_political_power = 5
+	}
+	option = {
+		name = mod_event.2.b
+		set_country_flag = the_king_has_returned
+		set_country_flag = load_new_MFC
+
+		load_focus_tree = {
+			tree = new_myfirstia
+			keep_completed = yes
+		}
+	}
+}
+country_event = {
+	id = mod_event.3
+	title = mod_event.3.t
+	desc = mod_event.3.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_event.3.a
+		set_cosmetic_tag = MFC_monarchy
+		add_country_leader_role = {
+			character = MFC_modding_king
+			country_leader = {
+				ideology = liberalism
+				traits ={ conservative_grandee }
+				expire = "1938.1.1.1"
+			}
+		}
+	}
+	option = {
+		name = mod_event.3.b
+		set_cosmetic_tag = MFC_moderator
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+}
+country_event = {
+	id = mod_event.4
+	title = mod_event.4.t
+	desc = mod_event.4.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_event.4.a
+		custom_effect_tooltip = secret_research_tt
+		mark_focus_tree_layout_dirty = yes
+	}
+}

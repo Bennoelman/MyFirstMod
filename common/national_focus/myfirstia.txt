@@ -1,0 +1,76 @@
+focus_tree = {
+	id = myfirstia_focus
+	
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = mfc
+			NOT = {
+				has_country_flag = load_new_MFC
+			}
+		}
+	}
+	shared_focus = MFS_power_armor_experiments
+	shared_focus = MFS_build_heavy_industry
+
+	focus = {
+		id = MFC_focus_1
+		icon = {
+			value = GFX_goal_support_communism
+			trigger = {
+				has_government = communism
+			}
+		}
+		icon = {
+			value = GFX_goal_MFC_government
+		}
+		x = 1
+		y = 0
+
+		dynamic = yes
+
+		cost = 10
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = MFC_focus_2
+		icon = GFX_goal_generic_neutrality_focus
+		relative_position_id = MFC_focus_1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = MFC_focus_1
+		}
+		mutually_exclusive = {
+			focus = MFC_focus_3
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = MFC_focus_3
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = MFC_focus_1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = MFC_focus_1
+		}
+		mutually_exclusive = {
+			focus = MFC_focus_2
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_war_support = 0.1
+		 }
+	}
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+  simple_exosuits:"Simple Exosuit"
+  simple_exosuits_desc:"These exosuits will help our troops move faster and are also good for construction work."
+  cat_power_armor:"$power_armor$"
+  power_armor:"Power Armor"
+  power_armor_0:"$early_power_armor$"
+  power_armor_0_desc:"Hardened steel placed over exosuites to provide mobility and protection to infantry."
+  early_power_armor:"Early $power_armor$"
+  power_armor_infantry:"Power Armor Infantry"

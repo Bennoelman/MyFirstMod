@@ -1,0 +1,8 @@
+remove_1_convoy_10_political_power = {
+	add_political_power = -10
+	add_equipment_to_stockpile = {
+		type = convoy_1
+		amount = -1
+		producer = ROOT
+	}
+}

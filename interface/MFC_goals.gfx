@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_goal_MFC_government"
+		texturefile = "gfx/interface/goals/focus_MFC_government.tga"
+	}
+}

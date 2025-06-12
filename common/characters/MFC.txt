@@ -1,0 +1,58 @@
+characters={
+	MFC_great_leader={
+		name=MFC_great_leader
+		portraits={
+			civilian={
+				large="GFX_portrait_MFC_character"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ conservative_grandee }
+			expire="1938.1.1.1"
+			id = -1
+		}
+	}
+	MFC_modding_king={
+		name=MFC_modding_king
+		portraits = {
+			civilian = {
+				large="GFX_portrait_MFC_modding_king"
+			}
+		}
+	}
+
+	MFC_field_marshal={
+		name=MFC_field_marshal
+		portraits={
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_Alan_Brooke.dds"
+			}
+		}
+
+		field_marshal={
+			traits={ career_officer trait_cautious defensive_doctrine }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=3
+
+		}
+	}
+
+	MFC_moderator={
+		name = MFC_moderator
+		portraits ={
+			civilian = {
+				large="gfx/leaders/MFC/moderator.tga"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { moderator }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}
