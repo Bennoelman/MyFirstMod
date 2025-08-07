@@ -9,7 +9,7 @@ ideas = {
 		}
 
 		MFS_power_armor_production_lines = {
-			picture = GFX_goal_generic_construct_mil_factory
+			picture = AUS_phonix_insurance_variant
 
 			equipment_bonus = {
 				power_armor_0 = {

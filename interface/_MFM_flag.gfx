@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType ={
+		name = "GFX_flag_MFC_animated"
+		texturefile = "gfx/flags/MFC_monarchy.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_flag_MFC_animated"
+		texturefile = "gfx/flags/MFC_monarchy.dds"
+		noOfFrames = 39
+		animation_rate_fps = 9
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+}
