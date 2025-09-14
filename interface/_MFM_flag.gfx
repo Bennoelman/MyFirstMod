@@ -1,12 +1,12 @@
 spriteTypes = {
 	spriteType ={
 		name = "GFX_flag_MFC_animated"
-		texturefile = "gfx/flags/MFC_monarchy.dds"
+		texturefile = "gfx/flags/MFC_monarchy.tga"
 	}
 
 	frameAnimatedSpriteType = {
 		name = "GFX_flag_MFC_animated"
-		texturefile = "gfx/flags/MFC_monarchy.dds"
+		texturefile = "gfx/flags/MFC_monarchy.tga"
 		noOfFrames = 39
 		animation_rate_fps = 9
 		looping = yes
